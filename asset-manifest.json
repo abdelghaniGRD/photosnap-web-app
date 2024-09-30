@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/photosnap-web-app/static/css/main.08377691.css",
+    "main.js": "/photosnap-web-app/static/js/main.d73e8682.js",
+    "index.html": "/photosnap-web-app/index.html",
+    "main.08377691.css.map": "/photosnap-web-app/static/css/main.08377691.css.map",
+    "main.d73e8682.js.map": "/photosnap-web-app/static/js/main.d73e8682.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08377691.css",
+    "static/js/main.d73e8682.js"
+  ]
+}
