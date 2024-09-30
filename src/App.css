@@ -49,6 +49,9 @@ header {
   row-gap: 20px;
   font-weight: bold;
 }
+.header-container .main-menu-large ul li a {
+  color: black;
+}
 .main-menu button {
   padding: 14px 68px;
 }
@@ -665,10 +668,20 @@ footer {
 }
 @media (min-width: 1440px) {
   #root {
-    max-width: 1500px;
+    max-width: 1440px;
+  }
+  footer {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .stories .short-stories .story {
+    width: 360px;
   }
   .short-features {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+    row-gap: 104px;
   }
   .pro-border::before {
     content: "";
@@ -793,7 +806,33 @@ footer {
     margin-top: 68px;
     justify-content: center;
     gap: 542px;
+    position: relative;
   }
+
+  .col2 a::after {
+    content: "";
+    position: absolute;
+    /* width: 54%; */
+    height: 2px;
+    background-color: white;
+    bottom: -7px;
+    left: 58px;
+  }
+  .beta-info .info a::after {
+    content: "";
+    position: absolute;
+    /* width: 64%; */
+    height: 2px;
+    background-color: white;
+    bottom: -7px;
+  }
+  .col2 a:hover::after {
+    width: 54%;
+  }
+  .beta-info .info a:hover::after {
+    width: 64%;
+  }
+
   .footer-content {
     justify-content: center;
     gap: 752px;

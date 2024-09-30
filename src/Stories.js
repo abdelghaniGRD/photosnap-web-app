@@ -12,8 +12,10 @@ function Stories() {
             pointerEvents: "none",
             backgroundImage:
               windowwidth < 768
-                ? `url('/assets/stories/tablet/moon-of-appalacia.jpg')`
-                : `url('/assets/stories/desktop/moon-of-appalacia.jpg')`,
+                ? ""
+                : windowwidth >= 1440
+                ? `url('/assets/stories/desktop/moon-of-appalacia.jpg')`
+                : `url('/assets/stories/tablet/moon-of-appalacia.jpg')`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
@@ -26,7 +28,7 @@ function Stories() {
                 src="/assets/stories/mobile/moon-of-appalacia.jpg"
                 alt="create and share"
               ></img>
-              <span className="border"></span>
+              {/* <span className="border"></span> */}
             </div>
           )}
 
